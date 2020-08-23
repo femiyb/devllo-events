@@ -1,0 +1,6 @@
+=== Events by Devllo ===
+Tags: events, calendar, meetings
+Requires at least: 4.4
+Tested up to: 5.4.1
+License: GPL-2.0+
+License URI: https://devllo.com/
