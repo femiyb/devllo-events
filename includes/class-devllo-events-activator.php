@@ -100,7 +100,7 @@ echo 'working';
 				
 				flush_rewrite_rules(); 
 
-				exit( wp_redirect( admin_url( 'edit.php?page=devllo-events-settings&tab=devllo_events_options&post_type=devllo_event' ) ) );
+			//	exit( wp_redirect( admin_url( 'edit.php?page=devllo-events-settings&tab=devllo_events_options&post_type=devllo_event' ) ) );
         }
     }
     
