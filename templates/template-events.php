@@ -3,7 +3,7 @@
 class Devllo_Events_Template_Display {
     public function __construct(){   
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-        add_shortcode('dv-events', array($this, 'display_calendar'));
+        add_shortcode('devllo-events', array($this, 'display_calendar'));
 
 
     }
