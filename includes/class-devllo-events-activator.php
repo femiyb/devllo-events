@@ -97,11 +97,10 @@ echo 'working';
 					// insert the post into the database
 					wp_insert_post( $page );
 				}
-	
+				
+				flush_rewrite_rules(); 
 
 				exit( wp_redirect( admin_url( 'edit.php?page=devllo-events-settings&tab=devllo_events_options&post_type=devllo_event' ) ) );
-
-				flush_rewrite_rules(); 
         }
     }
     
