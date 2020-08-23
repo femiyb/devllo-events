@@ -5,7 +5,7 @@
     Description: This is a simple Event Manager plugin for adding and listing your events, show event locations on map, link to online Event locations. It also integrates with FullCalendar to show a calendar with all events.
     Author: Devllo
     Version: 0.1
-    Author URI: https://devlloplugins.com/
+    Author URI: https://devllo.com/
     Text Domain: devllo-events
     Domain Path: /languages
  */
