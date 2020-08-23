@@ -55,8 +55,6 @@ echo 'working';
 	//	add_action('init', 'Devllo_Events_Post_Types, register_post_type');
 
         add_option( 'Activated_Plugin', 'devllo-event' );
-
-		flush_rewrite_rules(); 
     }
 
     function load_plugin() {
@@ -103,7 +101,7 @@ echo 'working';
 
 				exit( wp_redirect( admin_url( 'edit.php?page=devllo-events-settings&tab=devllo_events_options&post_type=devllo_event' ) ) );
 
-			
+				flush_rewrite_rules(); 
         }
     }
     
