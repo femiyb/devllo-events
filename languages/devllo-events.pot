@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Events by Devllo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-22 12:55+0000\n"
+"POT-Creation-Date: 2020-08-23 21:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -73,6 +73,114 @@ msgctxt "URL slug"
 msgid "event"
 msgstr ""
 
+#: includes/class-devllo-events-post-types.php:145
+msgid "Search Event Tags"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:146
+msgid "All Event Tags"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:147
+msgid "Parent Event Tags"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:148
+msgid "Parent Event Tags:"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:149
+msgid "Edit Event Tag"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:150
+msgid "Update Event Tag"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:151
+msgid "Add New Event Tag"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:152
+msgid "New Event Tag Name"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:153
+msgid "Event Tags"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:171
+msgid "Search Event Types"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:172
+msgid "All Event Types"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:173
+msgid "Parent Event Types"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:174
+msgid "Parent Event Types:"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:175
+msgid "Edit Event Type"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:176
+msgid "Update Event Type"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:177
+msgid "Add New Event Type"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:178
+msgid "New Event Type Name"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:179
+msgid "Event Types"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:197
+msgid "Search Categories"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:198
+msgid "All Event Categories"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:199
+msgid "Parent Category"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:200
+msgid "Parent Category:"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:201
+msgid "Edit Category"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:202
+msgid "Update Category"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:203
+msgid "Add New Event Category"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:204
+msgid "New Event Category Name"
+msgstr ""
+
+#: includes/class-devllo-events-post-types.php:205
+msgid "Event Categories"
+msgstr ""
+
 #: admin/class-devllo-events-admin-menu.php:38
 msgid "Devllo Events Settings"
 msgstr ""
@@ -85,8 +193,8 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: admin/class-devllo-events-admin-settings.php:85
-msgid "Display"
+#: admin/class-devllo-events-admin-settings.php:96
+msgid "Pages"
 msgstr ""
 
 #: admin/class-devllo-events-posts-admin.php:64
@@ -109,6 +217,14 @@ msgstr ""
 msgid "Event Website:"
 msgstr ""
 
+#: admin/class-devllo-events-posts-admin.php:376
+msgid "Start Date and Time"
+msgstr ""
+
+#: admin/class-devllo-events-posts-admin.php:386
+msgid "End Date and Time"
+msgstr ""
+
 #. Name of the plugin
 msgid "Events by Devllo"
 msgstr ""
@@ -121,13 +237,10 @@ msgid ""
 msgstr ""
 
 #. URI of the plugin
-msgid "https://devllo.com/"
+#. Author URI of the plugin
+msgid "https://devlloplugins.com/"
 msgstr ""
 
 #. Author of the plugin
 msgid "Devllo"
-msgstr ""
-
-#. Author URI of the plugin
-msgid "https://devllo.com"
 msgstr ""

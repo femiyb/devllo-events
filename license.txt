@@ -1,6 +1,9 @@
-=== Events by Devllo ===
-Tags: events, calendar, meetings
-Requires at least: 4.4
-Tested up to: 5.4.1
-License: GPL-2.0+
-License URI: https://devllo.com/
+Events by Devllo
+
+This plugin uses the same software license as the current version of WordPress: GPLv2. You can get the text of that license in the license.txt file of your root WordPress directory or online at https://www.gnu.org/licenses/old-licenses/gpl-2.0.html.
+
+Please read the GPLv2 for full details, but what this means in practice is:
+
+1. You may install this plugin on any site for personal or commercial use. 
+2. This plugin is distributed WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+3. You may redistribute this plugin any way you choose as long as you maintain the GPLv2 license. 

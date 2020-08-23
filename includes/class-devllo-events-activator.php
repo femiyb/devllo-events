@@ -69,7 +69,7 @@ echo 'working';
 			// Create Event Page
 			if ( null === $wpdb->get_row( "SELECT post_name FROM {$wpdb->prefix}posts WHERE post_name = 'events'", 'ARRAY_A' ) ) {
 				$current_user = wp_get_current_user();
-				$new_page_content = '[dv-events]';
+				$new_page_content = '[devllo-events]';
 				// create post object
 				$page = array(
 					'post_title'  => __( 'Events' ),
@@ -85,7 +85,7 @@ echo 'working';
 			// Create Calendar Page
 			if ( null === $wpdb->get_row( "SELECT post_name FROM {$wpdb->prefix}posts WHERE post_name = 'calendar'", 'ARRAY_A' ) ) {
 				$current_user = wp_get_current_user();
-				$new_page_content = '[dv-events-calendar]';
+				$new_page_content = '[devllo-calendar]';
 				// create post object
 				$page = array(
 					'post_title'  => __( 'Calendar' ),
@@ -100,7 +100,7 @@ echo 'working';
 				
 				flush_rewrite_rules(); 
 
-			//	exit( wp_redirect( admin_url( 'edit.php?page=devllo-events-settings&tab=devllo_events_options&post_type=devllo_event' ) ) );
+				exit( wp_redirect( admin_url( 'edit.php?page=devllo-events-settings&tab=devllo_events_options&post_type=devllo_event' ) ) );
         }
     }
     
