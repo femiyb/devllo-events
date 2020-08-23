@@ -1,10 +1,10 @@
 <?php
 
 class Devllo_Events_Calendar_Display {
-    public function __construct(){   
-        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-        add_shortcode('dv-events-calendar', array($this, 'display_calendar'));
 
+    public function __construct(){  
+        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		    add_shortcode('dv-events-calendar', array($this, 'display_calendar'));
 
     }
 
@@ -22,16 +22,18 @@ class Devllo_Events_Calendar_Display {
 
       wp_enqueue_style('full_calendar_bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.css');
 
-
       wp_register_script( 'jquery_min_js_online', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' );
       wp_enqueue_script( 'jquery_min_js_online');
 
      wp_register_script( 'jquery_min_js', DEVLLO_EVENTS_INC_URI. 'assets/js/jquery.min.js' );
       wp_enqueue_script( 'jquery_min_js');
     }
+	
 
-    function display_calendar(){
-      global $post;
+    function display_calendar($content = ""){
+			if (!is_admin()){
+    global $post;
+
       $args = array( 
            'post_type' => 'devllo_event', 
            'post_status' => 'publish', 
@@ -47,10 +49,8 @@ class Devllo_Events_Calendar_Display {
         $url = get_permalink( $post->ID ); 
            // Pluck the id and title attributes
        $output[] = array( 'id' => $post->ID, 'title' => $post->post_title, 'start' => $startdate, 'end' => $enddate, 'url' => $url );
-       
      } 
-     if ( ! is_admin() ) {
-
+	 
 ?>
     <script>
 
@@ -72,16 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
         calendar.render();
       });
 
-</script>
+</script> 
 
-<div id='calendar'></div>
-<p></p>
-<?php
-}
+<?php 
+return "<div id='calendar'></div> = $content";
     }
-
-
+	}
 }
 new Devllo_Events_Calendar_Display();
-
-

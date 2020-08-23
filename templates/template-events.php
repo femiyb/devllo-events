@@ -30,7 +30,8 @@ class Devllo_Events_Template_Display {
       wp_enqueue_script( 'jquery_min_js');
     }
 
-    function display_calendar(){
+    function display_calendar($content = ""){
+      if (!is_admin()){
       global $post;
       $args = array( 
            'post_type' => 'devllo_event', 
@@ -49,7 +50,6 @@ class Devllo_Events_Template_Display {
        $output[] = array( 'id' => $post->ID, 'title' => $post->post_title, 'start' => $startdate, 'end' => $enddate, 'url' => $url );
        
      } 
-     if ( ! is_admin() ) {
 
  ?>
     <script>
@@ -71,14 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </script>
 
-<div id='calendar'></div>
-<p></p>
-<?php
-}
+<?php 
+return "<div id='calendar'></div> = $content";
     }
-
-
+  }
 }
 new Devllo_Events_Template_Display();
-
-
