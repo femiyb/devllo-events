@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Current plugin version.
  */
-define( 'DEVLLO_EVENTS_VERSION', '0.0.2' );
+define( 'DEVLLO_EVENTS_VERSION', '0.1' );
 
 /**
  * Devllo_Events class
@@ -103,12 +103,14 @@ if ( ! class_exists( 'Devllo_Events' ) ) {
 
     }
 
+    // set_define
     public function set_define( $name = '', $value = '' ) {
         if ( $name && ! defined( $name ) ) {
             define( $name, $value );
         }
     }
 
+    // _include
     public function _include( $file = null ) {
         if ( is_array( $file ) ) {
             foreach ( $file as $key => $f ) {
@@ -125,7 +127,7 @@ if ( ! class_exists( 'Devllo_Events' ) ) {
         }
     }
 
-
+    // Load Text Domain
     public function text_domain() {
         // Get mo file
         $text_domain = 'devllo-events';

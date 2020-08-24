@@ -19,7 +19,7 @@ You can display events list using the shortcode [devllo-events] and the Calendar
 You can install directly from the Plugin Repository using the Plugins system in WordPress.
 
 MANUAL INSTALLATION
-Upload plugin-name.php to the /wp-content/plugins/ directory
+Upload devllo-events.php to the /wp-content/plugins/ directory
 Activate the plugin through the ‘Plugins’ menu in WordPress
 
 AFTER INSTALLATION, the plugin will automatically create the pages Events and Calendar, if those pages don\'t already exist and add the shortcodes [devllo-events] and [devllo-calendar].

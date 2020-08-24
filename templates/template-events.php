@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <?php 
-return "<div id='calendar'></div> = $content";
-    }
+return "<div id='calendar'></div>" . $content;
+}
   }
 }
 new Devllo_Events_Template_Display();
